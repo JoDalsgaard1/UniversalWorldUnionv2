@@ -326,7 +326,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -27.2, y: 12.7}
+  m_AnchoredPosition: {x: -27.2, y: -5}
   m_SizeDelta: {x: 933.9, y: 418.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &456355723
@@ -351,15 +351,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Open Door
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -376,12 +376,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 163.9
+  m_fontSize: 147.9
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 163.9
+  m_fontSizeMax: 147.9
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -589,7 +589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 156695011515c4f409b1b479018ee678, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enterText: I am an interactive door
+  enterText: Open door
   exitText: I am a non-interactive door
   interactText: Opening door
   objectPos: {x: 0, y: 0, z: 0}
@@ -1503,9 +1503,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 156695011515c4f409b1b479018ee678, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enterText: I am an interactive cube
+  enterText: Look at cube
   exitText: I am a non-interactive cube
-  interactText: Looking at cube
+  interactText: A lot of interesting text about this cube that the player can read.
+    Hooray!
   objectPos: {x: 0, y: 0, z: 0}
   popupUI: {fileID: 1556399326}
   interactionPromptUI: {fileID: 821446731}
@@ -1641,10 +1642,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: testing text
+  m_text: A lot of interesting text about this cube that the player can read. Hooray!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1676,7 +1677,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 2048
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
