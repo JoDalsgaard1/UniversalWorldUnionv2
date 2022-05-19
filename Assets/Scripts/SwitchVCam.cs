@@ -18,25 +18,36 @@ public class SwitchVCam : MonoBehaviour
         virtualCamera = GetComponent<CinemachineVirtualCamera>();
     }
 
-    private void OnEnable()
-    {
-        aimAction.performed += _ => StartAim();
-        aimAction.canceled += _ => CancelAim();
-    }
+    //private void OnEnable()
+    //{
+    //    aimAction.performed += _ => StartAim();
+    //    aimAction.canceled += _ => CancelAim();
+    //}
 
-    private void OnDisable()
-    {
-        aimAction.performed -= _ => StartAim();
-        aimAction.canceled -= _ => CancelAim();
-    }
+    //private void OnDisable()
+    //{
+    //    aimAction.performed -= _ => StartAim();
+    //    aimAction.canceled -= _ => CancelAim();
+    //}
 
-    private void StartAim()
-    {
-        virtualCamera.Priority += priorityBoostAmount;
-    }
+    public bool CanAim = false;
 
-    private void CancelAim()
+    public void ZoomIn()
     {
-        virtualCamera.Priority -= priorityBoostAmount;
+        if (CanAim)
+        {
+            virtualCamera.Priority += priorityBoostAmount;
+            Debug.Log("trying to zoom in");
+        }
     }
+    public void ZoomOut()
+        {
+            virtualCamera.Priority -= priorityBoostAmount;
+            Debug.Log("trying to zoom out");
+        }
+
+    //private void CancelAim()
+    //{
+    //    virtualCamera.Priority -= priorityBoostAmount;
+    //}
 }

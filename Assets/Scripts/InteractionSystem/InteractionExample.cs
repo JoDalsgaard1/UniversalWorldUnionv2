@@ -7,6 +7,7 @@ public class InteractionExample : MonoBehaviour
     public Interactable currentNearestObject;
     [SerializeField] private InteractionPromptUI interactionPromptUI;
     [SerializeField] private PopupUI popupUI;
+    [SerializeField] private SwitchVCam switchVCam;
 
 
     // Start is called before the first frame update
@@ -23,6 +24,7 @@ public class InteractionExample : MonoBehaviour
             if (!interactionPromptUI.IsDisplayed && !popupUI.IsDisplayed)
             {
                 interactionPromptUI.SetUp(currentNearestObject.enterText);
+                switchVCam.CanAim = true;
             }
         }
         if (currentNearestObject == null)
@@ -30,6 +32,7 @@ public class InteractionExample : MonoBehaviour
             if (interactionPromptUI.IsDisplayed)
             {
                 interactionPromptUI.Close();
+                switchVCam.CanAim = false;
             }
         }
     }
@@ -42,10 +45,12 @@ public class InteractionExample : MonoBehaviour
         if(currentNearestObject != null && popupUI.IsDisplayed == false)
         {
             currentNearestObject.Interact();
+            switchVCam.ZoomIn();
         }
         else
         {
             popupUI.Close();
+            switchVCam.ZoomOut();
         }
     }
 }
