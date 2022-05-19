@@ -7,7 +7,9 @@ public class SwitchVCam : MonoBehaviour
     [SerializeField]
     private PlayerInput playerInput;
     [SerializeField]
-    private int priorityBoostAmount = 10;
+    private int priorityBoostAmount = 12;
+    [SerializeField]
+    private int inactivePriority = 8;
     private InputAction aimAction;
     private CinemachineVirtualCamera virtualCamera;
 
@@ -36,14 +38,12 @@ public class SwitchVCam : MonoBehaviour
     {
         if (CanAim)
         {
-            virtualCamera.Priority += priorityBoostAmount;
-            Debug.Log("trying to zoom in");
+            virtualCamera.Priority = priorityBoostAmount;
         }
     }
     public void ZoomOut()
         {
-            virtualCamera.Priority -= priorityBoostAmount;
-            Debug.Log("trying to zoom out");
+            virtualCamera.Priority = inactivePriority;
         }
 
     //private void CancelAim()

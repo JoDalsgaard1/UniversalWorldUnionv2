@@ -32,8 +32,10 @@ public class InteractionExample : MonoBehaviour
             if (interactionPromptUI.IsDisplayed)
             {
                 interactionPromptUI.Close();
-                switchVCam.CanAim = false;
             }
+            popupUI.Close();
+            switchVCam.ZoomOut();
+            switchVCam.CanAim = false;
         }
     }
 
