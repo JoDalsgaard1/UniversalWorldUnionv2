@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2815969577347159436
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: street-lamp-mat
+  m_Shader: {fileID: -6465566751694194690, guid: 67fb65d658232674b93e59fde16dcbd2,
+    type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _SampleTexture2D_1129adff52e148c5aafab5c612c47f75_Texture_1:
+        m_Texture: {fileID: 2800000, guid: cbf8ff6952c199b40806bb6a361327b9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_445bb25bed564dcca29c7d83340ccac4_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 75edc3150027ee643b15c0a6faeef561, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_6eba31c0d64f4460a0fcf9dc65ce54c2_Texture_1:
+        m_Texture: {fileID: 2800000, guid: dac60c05dc303314bbe27bea704af7a2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_b9ec1e90f38f4da6b3d140d5766d0ace_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 72e50ca8fc653464b9aee5c50b4cf91f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_ee7bb1a537b4474082c2821b29e931f5_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 8036c995ae52e604fa55aa30f5f32f7a, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_ff4c47e3feb84f9c80f93a4513802684_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 7efbe6349de79d645bb91bac06686fdd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - Vector1_ff24a5860e1a489b97102dc79e3ce1cb: 0.5
+    m_Colors: []
+  m_BuildTextureStacks: []
