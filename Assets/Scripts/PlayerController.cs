@@ -54,16 +54,16 @@ public class PlayerController : MonoBehaviour
         cameraTransform = Camera.main.transform;
         moveAction = playerInput.actions["Move"];
         jumpAction = playerInput.actions["Jump"];
-        runAction = playerInput.actions["RunStart"];
-        runEndAction = playerInput.actions["RunEnd"];
+        //runAction = playerInput.actions["RunStart"];
+        //runEndAction = playerInput.actions["RunEnd"];
         // Animations
         animator = GetComponent<Animator>();
         jumpAnimation = Animator.StringToHash("jump");
-        runAnimation = Animator.StringToHash("Run");
+        //runAnimation = Animator.StringToHash("Run");
         moveXAnimationParameterId = Animator.StringToHash("MoveX");
         moveZAnimationParameterId = Animator.StringToHash("MoveZ");
-        runXAnimationParameterId = Animator.StringToHash("RunX");
-        runZAnimationParameterId = Animator.StringToHash("RunZ");
+        //runXAnimationParameterId = Animator.StringToHash("RunX");
+        //runZAnimationParameterId = Animator.StringToHash("RunZ");
     }
 
     void Update()
@@ -84,35 +84,35 @@ public class PlayerController : MonoBehaviour
         if (groundedPlayer && playerVelocity.y < 0)
         {
             playerVelocity.y = collisionFixForce;
-            Debug.Log("forcing player velocity");
+            //Debug.Log("forcing player velocity");
         }
         Vector2 input = moveAction.ReadValue<Vector2>();
         currentAnimationBlendVector = Vector2.SmoothDamp(currentAnimationBlendVector, input, ref animationVelocity, animationSmoothTime);
         Vector3 move = new Vector3(currentAnimationBlendVector.x, 0, currentAnimationBlendVector.y);
         move = move.x * cameraTransform.right.normalized + move.z * cameraTransform.forward.normalized;
         //move.y = 0f;
-        if (runAction.triggered)
-        {
-            // Blend run animation
-            playerSpeed = playerRunSpeed;
-            animator.SetTrigger("RunStart");
-            animator.SetFloat(runXAnimationParameterId, currentAnimationBlendVector.x);
-            animator.SetFloat(runZAnimationParameterId, currentAnimationBlendVector.y);
-        }
-        else if (runEndAction.triggered)
-        {
-            playerSpeed = initialPlayerSpeed;
-            animator.SetTrigger("RunEnd");
+        //if (runAction.triggered)
+        //{
+        //    // Blend run animation
+        //    playerSpeed = playerRunSpeed;
+        //    animator.SetTrigger("RunStart");
+        //    animator.SetFloat(runXAnimationParameterId, currentAnimationBlendVector.x);
+        //    animator.SetFloat(runZAnimationParameterId, currentAnimationBlendVector.y);
+        //}
+        //else if (runEndAction.triggered)
+        //{
+        //    playerSpeed = initialPlayerSpeed;
+        //    animator.SetTrigger("RunEnd");
+        //    // Blend strafe animation
+        //    animator.SetFloat(moveXAnimationParameterId, currentAnimationBlendVector.x);
+        //    animator.SetFloat(moveZAnimationParameterId, currentAnimationBlendVector.y);
+        //}
+        //else
+        //{
             // Blend strafe animation
             animator.SetFloat(moveXAnimationParameterId, currentAnimationBlendVector.x);
             animator.SetFloat(moveZAnimationParameterId, currentAnimationBlendVector.y);
-        }
-        else
-        {
-            // Blend strafe animation
-            animator.SetFloat(moveXAnimationParameterId, currentAnimationBlendVector.x);
-            animator.SetFloat(moveZAnimationParameterId, currentAnimationBlendVector.y);
-        }
+        //}
         
         controller.Move(move * Time.deltaTime * playerSpeed);
         
