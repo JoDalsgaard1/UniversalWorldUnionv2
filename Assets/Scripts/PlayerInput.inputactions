@@ -42,18 +42,9 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "RunStart",
+                    "name": "Interact",
                     "type": "Button",
-                    "id": "49900270-a343-42af-8011-d7a21c0f114c",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "RunEnd",
-                    "type": "Button",
-                    "id": "1fb1c6d0-2b74-49fb-a0e6-11666b729211",
+                    "id": "545f5594-820f-4c19-90a5-da1d4580d2ad",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -151,23 +142,12 @@
                 },
                 {
                     "name": "",
-                    "id": "2c249758-ad15-4a76-b46b-752f1ae3465b",
-                    "path": "<Keyboard>/shift",
-                    "interactions": "Press",
+                    "id": "8786d214-9240-40a1-a2ef-eb4b91dd4fbd",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "RunStart",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "7248fdcd-ecab-4d6b-abcb-fd21aa24df71",
-                    "path": "<Keyboard>/shift",
-                    "interactions": "Press(behavior=1)",
-                    "processors": "",
-                    "groups": "",
-                    "action": "RunEnd",
+                    "action": "Interact",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

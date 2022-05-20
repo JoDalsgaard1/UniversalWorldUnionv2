@@ -7,7 +7,9 @@ public class SwitchVCam : MonoBehaviour
     [SerializeField]
     private PlayerInput playerInput;
     [SerializeField]
-    private int priorityBoostAmount = 10;
+    private int priorityBoostAmount = 12;
+    [SerializeField]
+    private int inactivePriority = 8;
     private InputAction aimAction;
     private CinemachineVirtualCamera virtualCamera;
 
@@ -18,25 +20,34 @@ public class SwitchVCam : MonoBehaviour
         virtualCamera = GetComponent<CinemachineVirtualCamera>();
     }
 
-    private void OnEnable()
-    {
-        aimAction.performed += _ => StartAim();
-        aimAction.canceled += _ => CancelAim();
-    }
+    //private void OnEnable()
+    //{
+    //    aimAction.performed += _ => StartAim();
+    //    aimAction.canceled += _ => CancelAim();
+    //}
 
-    private void OnDisable()
-    {
-        aimAction.performed -= _ => StartAim();
-        aimAction.canceled -= _ => CancelAim();
-    }
+    //private void OnDisable()
+    //{
+    //    aimAction.performed -= _ => StartAim();
+    //    aimAction.canceled -= _ => CancelAim();
+    //}
 
-    private void StartAim()
-    {
-        virtualCamera.Priority += priorityBoostAmount;
-    }
+    public bool CanAim = false;
 
-    private void CancelAim()
+    public void ZoomIn()
     {
-        virtualCamera.Priority -= priorityBoostAmount;
+        if (CanAim)
+        {
+            virtualCamera.Priority = priorityBoostAmount;
+        }
     }
+    public void ZoomOut()
+        {
+            virtualCamera.Priority = inactivePriority;
+        }
+
+    //private void CancelAim()
+    //{
+    //    virtualCamera.Priority -= priorityBoostAmount;
+    //}
 }
