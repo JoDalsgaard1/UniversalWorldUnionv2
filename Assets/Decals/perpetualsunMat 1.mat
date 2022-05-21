@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: perpetualsunMat 1
-  m_Shader: {fileID: -6465566751694194690, guid: 055551ac2ab34a640847cba41708abb4,
+  m_Shader: {fileID: -6465566751694194690, guid: 2f26d5cf6e730c64aa4841fb52d13e1a,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -35,11 +35,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_504e93e386f44b62b52de5f07ac30361:
-        m_Texture: {fileID: 2800000, guid: b26e0cef16b2a3348b85875d08a78d62, type: 3}
+        m_Texture: {fileID: 2800000, guid: 958621170fd229745a4fd37ba785a85d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_b097776e76b243709bb61261b3842dde:
-        m_Texture: {fileID: 2800000, guid: ef070c5fef997a344834d29d3f2e9a5f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 807430f9d7500b547b4eba0c76c41f1c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_9a1ca9e6d0fe40818486376bf3a8c8fc_Texture_1:
@@ -61,6 +61,7 @@ Material:
     m_Ints: []
     m_Floats:
     - Vector1_a718f7abc22045389e70c7e63f901d3c: 4.19
+    - _DecalAngleFadeSupported: 1
     - _DecalMeshBiasType: 0
     - _DecalMeshDepthBias: 0
     - _DecalMeshViewBias: 0
