@@ -8,6 +8,8 @@ public class PopupUI : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI screenText;
     [SerializeField] private GameObject uiScreen;
+    [SerializeField] private GameObject imageScreen;
+    [SerializeField] private GameObject imageRenderer;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,7 @@ public class PopupUI : MonoBehaviour
     {
         screenText.text = objectText;
         uiScreen.SetActive(true);
+        imageScreen.SetActive(true);
         //panelPos.x = newPos.x;
         //panelPos.y = newPos.y;
         //transform.position = panelPos;
@@ -34,6 +37,7 @@ public class PopupUI : MonoBehaviour
     public void Close()
     {
         uiScreen.SetActive(false);
+        imageScreen.SetActive(false);
         IsDisplayed = false;
     }
 }
