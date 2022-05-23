@@ -22,7 +22,7 @@ public class ThunderTrigger : MonoBehaviour
     void Update()
     {
         m_counter += Time.deltaTime;
-        Debug.Log("running!");
+        //Debug.Log("running!");
 
         // If reach the time to play the effect
         if (m_counter >= m_timeToPlay)
