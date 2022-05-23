@@ -1771,10 +1771,7 @@ MonoBehaviour:
   sceneName: LVL-YIXIN
   enterText: Look at cube
   exitText: I am a non-interactive cube
-  interactText: A lot of interesting text about this cube that the player can read.
-    Hooray! A lot of interesting text about this cube that the player can read. Hooray!
-    A lot of interesting text about this cube that the player can read. Hooray! A
-    lot of interesting text about this cube that the player can read. Hooray!
+  interactText: not as much text
   objectPos: {x: 0, y: 0, z: 0}
   popupUI: {fileID: 1556399326}
   interactionPromptUI: {fileID: 821446731}
@@ -1844,6 +1841,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: newPlayerRobot
+      objectReference: {fileID: 0}
+    - target: {fileID: 8276896682680038914, guid: 4b9dc83482779f04592b2e7f8420997d,
+        type: 3}
+      propertyPath: playerRunSpeed
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8276896682680038925, guid: 4b9dc83482779f04592b2e7f8420997d,
         type: 3}
@@ -2877,7 +2879,7 @@ PrefabInstance:
     - target: {fileID: 3785989230467933303, guid: 8f61a230e280b57489c1edc59888098f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 575.0035
+      value: 575.0032
       objectReference: {fileID: 0}
     - target: {fileID: 3785989230467933303, guid: 8f61a230e280b57489c1edc59888098f,
         type: 3}
@@ -2962,7 +2964,7 @@ PrefabInstance:
     - target: {fileID: 1116747577104270524, guid: 2a1da5cec376e7842a2094056a0cc896,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 574.99084
+      value: 574.99054
       objectReference: {fileID: 0}
     - target: {fileID: 1116747577104270524, guid: 2a1da5cec376e7842a2094056a0cc896,
         type: 3}
@@ -3526,7 +3528,7 @@ PrefabInstance:
     - target: {fileID: 5563405865321763867, guid: 4dfdecdb8317508488b93efd8f5b553b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 577.1201
+      value: 577.11896
       objectReference: {fileID: 0}
     - target: {fileID: 5563405865321763867, guid: 4dfdecdb8317508488b93efd8f5b553b,
         type: 3}
@@ -3536,7 +3538,7 @@ PrefabInstance:
     - target: {fileID: 5563405865321763867, guid: 4dfdecdb8317508488b93efd8f5b553b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 635.13116
+      value: 635.1308
       objectReference: {fileID: 0}
     - target: {fileID: 5563405865321763867, guid: 4dfdecdb8317508488b93efd8f5b553b,
         type: 3}
