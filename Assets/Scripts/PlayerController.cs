@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float animationSmoothTime = 0.1f;
     [SerializeField]
-    private float animationPlayTransition = 0.15f;
+    //private float animationPlayTransition = 0.15f;
     private float initialPlayerSpeed;
 
     private CharacterController controller;
@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(runAction.ReadValueAsObject());
+        //Debug.Log(runAction.ReadValueAsObject());
         groundedPlayer = controller.isGrounded;
         //groundedPlayer = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
         
@@ -95,11 +95,10 @@ public class PlayerController : MonoBehaviour
         if (runAction.ReadValueAsObject() != null)
         {
             // Blend run animation
-            Debug.Log("trying to run");
             playerSpeed = playerRunSpeed;
-            //animator.SetTrigger("RunStart");
-            //animator.SetFloat(runXAnimationParameterId, currentAnimationBlendVector.x);
-            //animator.SetFloat(runZAnimationParameterId, currentAnimationBlendVector.y);
+            animator.SetTrigger("RunStart");
+            animator.SetFloat(runXAnimationParameterId, currentAnimationBlendVector.x);
+            animator.SetFloat(runZAnimationParameterId, currentAnimationBlendVector.y);
         }
         //else if (runEndAction.triggered)
         //{
@@ -109,9 +108,10 @@ public class PlayerController : MonoBehaviour
         //    animator.SetFloat(moveXAnimationParameterId, currentAnimationBlendVector.x);
         //    animator.SetFloat(moveZAnimationParameterId, currentAnimationBlendVector.y);
         //}
-        else
+        if (runAction.ReadValueAsObject() == null)
         {
             // Blend strafe animation
+            animator.SetTrigger("RunEnd");
             playerSpeed = initialPlayerSpeed;
             animator.SetFloat(moveXAnimationParameterId, currentAnimationBlendVector.x);
             animator.SetFloat(moveZAnimationParameterId, currentAnimationBlendVector.y);

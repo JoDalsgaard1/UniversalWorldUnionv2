@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Interactable : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class Interactable : MonoBehaviour
     [SerializeField] public string enterText = "I am an interactive door";
     [SerializeField] public string exitText = "I am a non-interactive door";
     [SerializeField] public string interactText = "Opening door";
+    [SerializeField] public Sprite interactImage; 
 
     public Vector3 objectPos;
     [SerializeField] private PopupUI popupUI;
@@ -46,7 +48,7 @@ public class Interactable : MonoBehaviour
     {
         if (isReadable == true)
         {
-            popupUI.SetUp(interactText);
+            popupUI.SetUp(interactText, interactImage);
             interactionPromptUI.Close();
             Debug.Log(interactText);
         }
