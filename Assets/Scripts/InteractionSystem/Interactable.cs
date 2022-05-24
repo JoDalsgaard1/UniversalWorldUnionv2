@@ -13,7 +13,9 @@ public class Interactable : MonoBehaviour
     [SerializeField] public string enterText = "I am an interactive door";
     [SerializeField] public string exitText = "I am a non-interactive door";
     [SerializeField] public string interactText = "Opening door";
-    [SerializeField] public Sprite interactImage; 
+    [SerializeField] public Sprite interactImage;
+    private Animator animator;
+    private bool hasBeenInteractedWith = false;
 
     public Vector3 objectPos;
     [SerializeField] private PopupUI popupUI;
@@ -23,6 +25,7 @@ public class Interactable : MonoBehaviour
     void Start()
     {
         objectPos = transform.position;
+        animator = GetComponent<Animator>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -55,6 +58,11 @@ public class Interactable : MonoBehaviour
         if (isSceneTransport == true)
         {
             SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
+        }
+        if (hasAnimation == true && hasBeenInteractedWith == false)
+        {
+            animator.SetTrigger("Interact");
+            hasBeenInteractedWith = true;
         }
     }
 }

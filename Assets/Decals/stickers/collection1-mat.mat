@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: collection1-mat
-  m_Shader: {fileID: -6465566751694194690, guid: 2f26d5cf6e730c64aa4841fb52d13e1a,
+  m_Shader: {fileID: -6465566751694194690, guid: b34ef7f006691d349832a442e9ac3d85,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -39,7 +39,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_b097776e76b243709bb61261b3842dde:
-        m_Texture: {fileID: 2800000, guid: 81080e8d8e907ef4dad6f8054763df3b, type: 3}
+        m_Texture: {fileID: 2800000, guid: f266ecd18ee120c43832d8780293a12b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_7e1ddab97c284f379eb056086278c85e_Texture_1:
+        m_Texture: {fileID: 2800000, guid: d2707105e6d9e4e42b3c05eb2701bf0e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_9a1ca9e6d0fe40818486376bf3a8c8fc_Texture_1:
@@ -60,7 +64,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Vector1_a718f7abc22045389e70c7e63f901d3c: 4.19
+    - Vector1_a718f7abc22045389e70c7e63f901d3c: 0.39
     - _DecalAngleFadeSupported: 1
     - _DecalMeshBiasType: 0
     - _DecalMeshDepthBias: 0

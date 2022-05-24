@@ -25,7 +25,7 @@ PrefabInstance:
     - target: {fileID: 4479706703554371724, guid: bbb153be5976edd48a8d876095133ab0,
         type: 3}
       propertyPath: m_Name
-      value: AimCinemachine Variant
+      value: AimCinemachine
       objectReference: {fileID: 0}
     - target: {fileID: 4479706703554371724, guid: bbb153be5976edd48a8d876095133ab0,
         type: 3}
@@ -40,17 +40,17 @@ PrefabInstance:
     - target: {fileID: 4479706703554371726, guid: bbb153be5976edd48a8d876095133ab0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 572.51184
+      value: 577.1204
       objectReference: {fileID: 0}
     - target: {fileID: 4479706703554371726, guid: bbb153be5976edd48a8d876095133ab0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.2232804
+      value: 7.195183
       objectReference: {fileID: 0}
     - target: {fileID: 4479706703554371726, guid: bbb153be5976edd48a8d876095133ab0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 621.0009
+      value: 635.1313
       objectReference: {fileID: 0}
     - target: {fileID: 4479706703554371726, guid: bbb153be5976edd48a8d876095133ab0,
         type: 3}
@@ -110,7 +110,7 @@ PrefabInstance:
     - target: {fileID: 4479706703554371727, guid: bbb153be5976edd48a8d876095133ab0,
         type: 3}
       propertyPath: m_Lens.m_SensorSize.x
-      value: 2.086256
+      value: 1.7789034
       objectReference: {fileID: 0}
     - target: {fileID: 4479706703893567776, guid: bbb153be5976edd48a8d876095133ab0,
         type: 3}
@@ -219,6 +219,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInput: {fileID: 0}
   priorityBoostAmount: 10
+  inactivePriority: 8
+  CanAim: 0
 --- !u!114 &293808036
 MonoBehaviour:
   m_ObjectHideFlags: 0
