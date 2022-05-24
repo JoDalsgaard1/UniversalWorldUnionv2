@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0264b8669c2d1294580ce9acfffcf3ab, type: 3}
-  m_Name: UWU_heavyRain
+  m_Name: UWU_lessHeavyRain
   m_EditorClassIdentifier: 
   overrideObject: {fileID: 11400000, guid: 4c8b86f21f5f39a499af79bde79957d5, type: 2}
   profilePropertyList:
@@ -4385,7 +4385,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.779
+    slider: 0.183
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
@@ -4551,7 +4551,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.798
+    slider: 0.235
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
@@ -4717,7 +4717,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.854
+    slider: 0.092
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
@@ -5381,7 +5381,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.037
+    slider: 0.045
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
@@ -5547,7 +5547,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.09
+    slider: 0.024
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
@@ -5713,7 +5713,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.077
+    slider: 0.036
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
@@ -5879,7 +5879,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.141
+    slider: 0
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
@@ -6211,7 +6211,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.033
+    slider: 0
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
