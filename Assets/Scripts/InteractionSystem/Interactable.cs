@@ -6,14 +6,14 @@ using UnityEngine.UI;
 
 public class Interactable : MonoBehaviour
 {
-    [SerializeField] public bool isReadable = true;
-    [SerializeField] public bool hasAnimation = false;
-    [SerializeField] public bool isSceneTransport = false;
-    [SerializeField] public string sceneName = "LVL-YIXIN";
-    [SerializeField] public string enterText = "I am an interactive door";
-    [SerializeField] public string exitText = "I am a non-interactive door";
-    [SerializeField] public string interactText = "Opening door";
-    [SerializeField] public Sprite interactImage;
+    [SerializeField] private bool isReadable = true;
+    [SerializeField] private bool hasAnimation = false;
+    [SerializeField] private bool isSceneTransport = false;
+    [SerializeField] private string sceneName = "LVL-YIXIN";
+    public string enterText = "I am an interactive door";
+    [SerializeField] private string exitText = "I am a non-interactive door";
+    [SerializeField] private string interactText = "Opening door";
+    [SerializeField] private Sprite interactImage;
     private Animator animator;
     private bool hasBeenInteractedWith = false;
 
