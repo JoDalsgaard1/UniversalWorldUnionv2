@@ -8,12 +8,6 @@ public class PauseGame : MonoBehaviour
     [SerializeField] GameObject pauseMenu = null;      // If you want some UI to show while paused
 
     bool isPaused;
-    private PlayerInput playerInput;
-
-    private void Start()
-    {
-
-    }
 
     public void OnPause()
     {
