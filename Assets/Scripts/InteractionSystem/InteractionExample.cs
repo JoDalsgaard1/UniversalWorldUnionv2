@@ -21,7 +21,7 @@ public class InteractionExample : MonoBehaviour
     {
         if (currentNearestObject != null)
         {
-            if (!interactionPromptUI.IsDisplayed && !popupUI.IsDisplayed)
+            if (!popupUI.IsDisplayed)
             {
                 interactionPromptUI.SetUp(currentNearestObject.enterText);
                 switchVCam.CanAim = true;
@@ -33,7 +33,7 @@ public class InteractionExample : MonoBehaviour
             {
                 interactionPromptUI.Close();
             }
-            popupUI.Close();
+            //popupUI.Close();
             switchVCam.ZoomOut();
             switchVCam.CanAim = false;
         }

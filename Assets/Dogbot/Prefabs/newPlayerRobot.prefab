@@ -1115,8 +1115,8 @@ GameObject:
   - component: {fileID: 8276896682680038925}
   - component: {fileID: 8276896682680038914}
   - component: {fileID: 307732068}
+  - component: {fileID: 848732965615599622}
   - component: {fileID: 307732061}
-  - component: {fileID: -3775568509570393124}
   m_Layer: 0
   m_Name: newPlayerRobot
   m_TagString: Player
@@ -1259,6 +1259,20 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 3.62
   m_Center: {x: 0, y: 2.09, z: 1.99}
+--- !u!114 &848732965615599622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6831048539012203970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1ca27c8d57e5434b8e216ea7e3fdadc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 0}
+  switchToPauseCam: {fileID: 0}
 --- !u!114 &307732061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1275,19 +1289,6 @@ MonoBehaviour:
   interactionPromptUI: {fileID: 821446731}
   popupUI: {fileID: 0}
   switchVCam: {fileID: 0}
---- !u!114 &-3775568509570393124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6831048539012203970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1ca27c8d57e5434b8e216ea7e3fdadc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 0}
 --- !u!1 &6831048539035488232
 GameObject:
   m_ObjectHideFlags: 0

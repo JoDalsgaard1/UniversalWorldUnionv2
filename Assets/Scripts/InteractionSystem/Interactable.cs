@@ -10,12 +10,15 @@ public class Interactable : MonoBehaviour
     [SerializeField] private bool hasAnimation = false;
     [SerializeField] private bool isSceneTransport = false;
     [SerializeField] private string sceneName = "LVL-YIXIN";
-    public string enterText = "I am an interactive door";
+    public string enterText = "Open door";
     [SerializeField] private string exitText = "I am a non-interactive door";
     [SerializeField] private string interactText = "Opening door";
     [SerializeField] private Sprite interactImage;
     private Animator animator;
     private bool hasBeenInteractedWith = false;
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip interactSound;
+    [SerializeField] private AudioClip endInteractSound;
 
     public Vector3 objectPos;
     [SerializeField] private PopupUI popupUI;
@@ -26,6 +29,7 @@ public class Interactable : MonoBehaviour
     {
         objectPos = transform.position;
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -40,8 +44,12 @@ public class Interactable : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.GetComponent<InteractionExample>() != null)
+        if (other.GetComponent<InteractionExample>() != null && other.GetComponent<InteractionExample>().currentNearestObject == this)
         {
+            if (popupUI.IsDisplayed)
+            {
+                popupUI.Close();
+            }
             Debug.Log(exitText);
             other.GetComponent<InteractionExample>().currentNearestObject = null;
         }
@@ -54,6 +62,7 @@ public class Interactable : MonoBehaviour
             popupUI.SetUp(interactText, interactImage);
             interactionPromptUI.Close();
             Debug.Log(interactText);
+            audioSource.PlayOneShot(interactSound);
         }
         if (isSceneTransport == true)
         {
@@ -63,6 +72,7 @@ public class Interactable : MonoBehaviour
         {
             animator.SetTrigger("Interact");
             hasBeenInteractedWith = true;
+            audioSource.PlayOneShot(interactSound);
         }
     }
 }
