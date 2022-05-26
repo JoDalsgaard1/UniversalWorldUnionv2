@@ -12,7 +12,7 @@ public class Interactable : MonoBehaviour
     [SerializeField] private string sceneName = "LVL-YIXIN";
     public string enterText = "Open door";
     [SerializeField] private string exitText = "I am a non-interactive door";
-    [SerializeField] private string interactText = "Opening door";
+    [TextArea(10,20)] public string interactText = "Opening door";
     [SerializeField] private Sprite interactImage;
     private Animator animator;
     private bool hasBeenInteractedWith = false;
@@ -66,7 +66,7 @@ public class Interactable : MonoBehaviour
         }
         if (isSceneTransport == true)
         {
-            SceneManager.LoadScene(sceneName, LoadSceneMode.Additive);
+            SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
         }
         if (hasAnimation == true && hasBeenInteractedWith == false)
         {
