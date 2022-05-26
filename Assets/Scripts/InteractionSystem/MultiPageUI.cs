@@ -34,15 +34,7 @@ public class MultiPageUI : MonoBehaviour
         IsDisplayed = true;
         screens.SetActive(true);
         Cursor.visible = true;
-    }
-    
-    // Update is called once per frame
-    public void OnInteract()
-    {
-        if (IsDisplayed == true)
-        {
-            Close();
-        }
+        print("");
     }
     
     public void button1Click()

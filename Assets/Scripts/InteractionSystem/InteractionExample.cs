@@ -9,6 +9,7 @@ public class InteractionExample : MonoBehaviour
     [SerializeField] private PopupUI popupUI;
     [SerializeField] private MultiPageUI multiPageUI;
     [SerializeField] private SwitchVCam switchVCam;
+    public List<int> keyList = new List<int>();
 
     // Start is called before the first frame update
     void Start()
@@ -47,7 +48,10 @@ public class InteractionExample : MonoBehaviour
         if(currentNearestObject != null && popupUI.IsDisplayed == false && multiPageUI.IsDisplayed == false)
         {
             currentNearestObject.Interact();
-            switchVCam.ZoomIn();
+            if (currentNearestObject.isLocked == false)
+            {
+                switchVCam.ZoomIn();
+            }
             print("INTERACTING");
         }
         else
