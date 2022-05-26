@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Interactable : MonoBehaviour
 {
     [SerializeField] private bool isReadable = true;
+    [SerializeField] private bool hasMultiplePages = false;
     [SerializeField] private bool hasAnimation = false;
     [SerializeField] private bool isSceneTransport = false;
     [SerializeField] private string sceneName = "LVL-YIXIN";
@@ -23,6 +24,8 @@ public class Interactable : MonoBehaviour
     public Vector3 objectPos;
     [SerializeField] private PopupUI popupUI;
     [SerializeField] private InteractionPromptUI interactionPromptUI;
+    [SerializeField] private MultiplePagesHandler multiplePagesHandler;
+    [SerializeField] private MultiPageUI multiPageUI;
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +53,10 @@ public class Interactable : MonoBehaviour
             {
                 popupUI.Close();
             }
+            if (multiPageUI.IsDisplayed)
+            {
+                multiPageUI.Close();
+            }
             Debug.Log(exitText);
             other.GetComponent<InteractionExample>().currentNearestObject = null;
         }
@@ -63,6 +70,12 @@ public class Interactable : MonoBehaviour
             interactionPromptUI.Close();
             Debug.Log(interactText);
             audioSource.PlayOneShot(interactSound);
+        }
+        if (hasMultiplePages == true)
+        {
+            multiplePagesHandler.Initiate();
+            audioSource.PlayOneShot(interactSound);
+            interactionPromptUI.Close();
         }
         if (isSceneTransport == true)
         {

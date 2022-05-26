@@ -7,8 +7,8 @@ public class InteractionExample : MonoBehaviour
     public Interactable currentNearestObject;
     [SerializeField] private InteractionPromptUI interactionPromptUI;
     [SerializeField] private PopupUI popupUI;
+    [SerializeField] private MultiPageUI multiPageUI;
     [SerializeField] private SwitchVCam switchVCam;
-
 
     // Start is called before the first frame update
     void Start()
@@ -41,17 +41,19 @@ public class InteractionExample : MonoBehaviour
 
     public void OnInteract()
     {
-        print("Pressing E");
+        //print("Pressing E");
 
         //Interact with object
-        if(currentNearestObject != null && popupUI.IsDisplayed == false)
+        if(currentNearestObject != null && popupUI.IsDisplayed == false && multiPageUI.IsDisplayed == false)
         {
             currentNearestObject.Interact();
             switchVCam.ZoomIn();
+            print("INTERACTING");
         }
         else
         {
             popupUI.Close();
+            multiPageUI.Close();
             switchVCam.ZoomOut();
         }
     }
