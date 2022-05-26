@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/Scenes/CityMainScene.unity
+    guid: ad0692294bd4f59459739a4b131d6fab
+  - enabled: 1
     path: Assets/Scenes/charactercontroller-testing.unity
     guid: 3d19151fcb1437c4fa09815ebff39c88
   - enabled: 1
@@ -17,7 +20,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LVL-STINE.unity
     guid: 322f0ba2eae6f03419fa25ffd0582a9c
-  - enabled: 1
-    path: Assets/Scenes/CityMainScene.unity
-    guid: ad0692294bd4f59459739a4b131d6fab
   m_configObjects: {}
