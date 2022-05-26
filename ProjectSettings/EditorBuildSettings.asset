@@ -5,19 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/CityMainScene.unity
     guid: ad0692294bd4f59459739a4b131d6fab
   - enabled: 1
     path: Assets/Scenes/charactercontroller-testing.unity
     guid: 3d19151fcb1437c4fa09815ebff39c88
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/LVL-YIXIN.unity
     guid: 07ce1fd4e7a3d15428a668a02f9839c2
-  - enabled: 1
-    path: Assets/Scenes/LVL-STINE.unity
-    guid: 322f0ba2eae6f03419fa25ffd0582a9c
+  - enabled: 0
+    path: Assets/Scenes/LVL-STINE 1.unity
+    guid: bf656445793742b42a842897ee36ecfe
   m_configObjects: {}
