@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1331659387368332457}
   - component: {fileID: 1331659387368332470}
   - component: {fileID: 1331659387368332471}
+  - component: {fileID: 2800051880191172460}
   m_Layer: 0
   m_Name: leisure01
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331659387368332468}
-  m_LocalRotation: {x: 0.0538853, y: 0.9985472, z: -0, w: 0}
+  m_LocalRotation: {x: 0.053887073, y: 0.99854714, z: 0, w: 0}
   m_LocalPosition: {x: 589.37, y: 7.78, z: 618.8}
   m_LocalScale: {x: 1.8018, y: 2.6037812, z: 1.8018}
   m_ConstrainProportionsScale: 0
@@ -83,3 +84,26 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2800051880191172460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331659387368332468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 156695011515c4f409b1b479018ee678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isReadable: 1
+  hasAnimation: 0
+  isSceneTransport: 0
+  sceneName: 
+  enterText: Read poster
+  exitText: I am a non-interactive door
+  interactText: LEISURE. AUTOMATION. LUXURY. *UWU*
+  interactImage: {fileID: 21300000, guid: a108c2e8af9cad94cb771922508887e5, type: 3}
+  objectPos: {x: 0, y: 0, z: 0}
+  popupUI: {fileID: 0}
+  interactionPromptUI: {fileID: 0}

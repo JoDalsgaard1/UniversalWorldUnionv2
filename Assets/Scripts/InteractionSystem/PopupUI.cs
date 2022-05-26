@@ -13,11 +13,15 @@ public class PopupUI : MonoBehaviour
     [SerializeField] private GameObject imageScreen;
     [SerializeField] private GameObject imageRenderer;
     private Image objectImage;
+    private AudioSource audioSource;
+    [SerializeField] private AudioClip closeSound;
     // Start is called before the first frame update
     void Start()
     {
         uiScreen.SetActive(false);
+        imageScreen.SetActive(false);
         objectImage = imageRenderer.GetComponent<Image>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -41,6 +45,7 @@ public class PopupUI : MonoBehaviour
     }
     public void Close()
     {
+        audioSource.PlayOneShot(closeSound);
         uiScreen.SetActive(false);
         imageScreen.SetActive(false);
         IsDisplayed = false;
