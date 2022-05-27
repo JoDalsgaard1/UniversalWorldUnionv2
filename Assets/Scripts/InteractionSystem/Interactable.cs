@@ -9,7 +9,7 @@ public class Interactable : MonoBehaviour
     [SerializeField] private bool isReadable = true;
     [SerializeField] private bool hasMultiplePages = false;
     [SerializeField] private bool hasAnimation = false;
-    [SerializeField] private bool isSceneTransport = false;
+    [SerializeField] public bool isSceneTransport = false;
     [SerializeField] public bool isLocked = false;
     [SerializeField] private int lockNr;
     [SerializeField] public bool isKey = false;
