@@ -48,7 +48,7 @@ public class InteractionExample : MonoBehaviour
         if(currentNearestObject != null && popupUI.IsDisplayed == false && multiPageUI.IsDisplayed == false)
         {
             currentNearestObject.Interact();
-            if (currentNearestObject.isLocked == false)
+            if (currentNearestObject.isLocked == false || currentNearestObject.isSceneTransport == false)
             {
                 switchVCam.ZoomIn();
             }
