@@ -10,3 +10,5 @@
 [0525/100007.368:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
 [0526/025549.274:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
 [0526/025549.323:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0527/021545.366:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0527/021642.767:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.

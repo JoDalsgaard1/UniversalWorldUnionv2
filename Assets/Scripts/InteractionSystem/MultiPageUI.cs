@@ -35,6 +35,7 @@ public class MultiPageUI : MonoBehaviour
         screens.SetActive(true);
         Cursor.visible = true;
         print("");
+        switchToPauseCam.PauseCam();
     }
     
     public void button1Click()
@@ -84,9 +85,13 @@ public class MultiPageUI : MonoBehaviour
     }
     public void Close()
     {
-        IsDisplayed = false;
-        screens.SetActive(false);
-        Cursor.visible = false;
-        audioSource.PlayOneShot(closeSound);
+        if (IsDisplayed)
+        {
+            IsDisplayed = false;
+            screens.SetActive(false);
+            Cursor.visible = false;
+            audioSource.PlayOneShot(closeSound);
+            switchToPauseCam.UnpauseCam();
+        }
     }
 }

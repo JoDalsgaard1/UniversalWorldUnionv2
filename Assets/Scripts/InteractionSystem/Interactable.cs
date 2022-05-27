@@ -100,9 +100,9 @@ public class Interactable : MonoBehaviour
         }
         if (hasMultiplePages)
         {
+            interactionPromptUI.Close();
             multiplePagesHandler.Initiate();
             audioSource.PlayOneShot(interactSound);
-            interactionPromptUI.Close();
         }
         if (isSceneTransport)
         {

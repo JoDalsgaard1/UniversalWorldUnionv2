@@ -1289,7 +1289,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.172
+    slider: 1
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
@@ -1455,7 +1455,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.388
+    slider: 0
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
@@ -1621,7 +1621,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.741
+    slider: 0.05
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
@@ -1787,7 +1787,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.296
+    slider: 1
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
@@ -1953,7 +1953,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.676
+    slider: 0.283
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
@@ -2119,7 +2119,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.739
+    slider: 0.465
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
@@ -4367,7 +4367,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.035
+    slider: 0
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
@@ -5363,7 +5363,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.027
+    slider: 0
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
@@ -5529,7 +5529,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.033
+    slider: 0
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
@@ -7023,7 +7023,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.847
+    slider: 0.772
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:

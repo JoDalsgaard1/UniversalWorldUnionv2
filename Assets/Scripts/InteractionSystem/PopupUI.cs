@@ -45,10 +45,13 @@ public class PopupUI : MonoBehaviour
     }
     public void Close()
     {
-        audioSource.PlayOneShot(closeSound);
-        uiScreen.SetActive(false);
-        imageScreen.SetActive(false);
-        IsDisplayed = false;
+        if (IsDisplayed)
+        {
+            audioSource.PlayOneShot(closeSound);
+            uiScreen.SetActive(false);
+            imageScreen.SetActive(false);
+            IsDisplayed = false;
+        }
     }
 }
 

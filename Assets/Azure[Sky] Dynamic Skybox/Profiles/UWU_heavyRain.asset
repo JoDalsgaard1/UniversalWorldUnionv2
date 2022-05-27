@@ -2137,7 +2137,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.566
+    slider: 0.38
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
@@ -5381,7 +5381,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.037
+    slider: 0.325
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
@@ -5547,7 +5547,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.09
+    slider: 0.312
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
@@ -5713,7 +5713,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.077
+    slider: 0.355
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
