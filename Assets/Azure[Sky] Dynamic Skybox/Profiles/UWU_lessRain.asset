@@ -1787,7 +1787,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.296
+    slider: 1
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
@@ -2119,7 +2119,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.739
+    slider: 0.578
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
@@ -2783,7 +2783,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 1
+    slider: 0.814
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
@@ -4367,7 +4367,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.132
+    slider: 0.259
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
@@ -5363,7 +5363,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.065
+    slider: 0.314
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
@@ -5529,7 +5529,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.033
+    slider: 0.385
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:
@@ -7023,7 +7023,7 @@ MonoBehaviour:
     outputType: 0
     floatPropertyType: 0
     colorPropertyType: 0
-    slider: 0.724
+    slider: 0.793
     timelineBasedCurve:
       serializedVersion: 2
       m_Curve:

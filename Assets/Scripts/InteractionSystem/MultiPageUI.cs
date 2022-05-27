@@ -34,15 +34,8 @@ public class MultiPageUI : MonoBehaviour
         IsDisplayed = true;
         screens.SetActive(true);
         Cursor.visible = true;
-    }
-    
-    // Update is called once per frame
-    public void OnInteract()
-    {
-        if (IsDisplayed == true)
-        {
-            Close();
-        }
+        print("");
+        switchToPauseCam.PauseCam();
     }
     
     public void button1Click()
@@ -92,9 +85,13 @@ public class MultiPageUI : MonoBehaviour
     }
     public void Close()
     {
-        IsDisplayed = false;
-        screens.SetActive(false);
-        Cursor.visible = false;
-        audioSource.PlayOneShot(closeSound);
+        if (IsDisplayed)
+        {
+            IsDisplayed = false;
+            screens.SetActive(false);
+            Cursor.visible = false;
+            audioSource.PlayOneShot(closeSound);
+            switchToPauseCam.UnpauseCam();
+        }
     }
 }

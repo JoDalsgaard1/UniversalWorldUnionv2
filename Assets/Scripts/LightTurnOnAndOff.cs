@@ -10,6 +10,7 @@ public class LightTurnOnAndOff : MonoBehaviour
     void Start()
     {
         lights = GetComponentsInChildren<Light>(true);
+        LightOff();
     }
 
     // Update is called once per frame

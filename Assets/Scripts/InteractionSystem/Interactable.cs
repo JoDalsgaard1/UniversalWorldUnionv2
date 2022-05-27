@@ -10,12 +10,17 @@ public class Interactable : MonoBehaviour
     [SerializeField] private bool hasMultiplePages = false;
     [SerializeField] private bool hasAnimation = false;
     [SerializeField] private bool isSceneTransport = false;
+    [SerializeField] public bool isLocked = false;
+    [SerializeField] private int lockNr;
+    [SerializeField] public bool isKey = false;
+    [SerializeField] public int keyNr;
     [SerializeField] private string sceneName = "LVL-YIXIN";
     public string enterText = "Open door";
     [SerializeField] private string exitText = "I am a non-interactive door";
     [TextArea(10,20)] public string interactText = "Opening door";
     [SerializeField] private Sprite interactImage;
     private Animator animator;
+    private string origEntertext;
     private bool hasBeenInteractedWith = false;
     private AudioSource audioSource;
     [SerializeField] private AudioClip interactSound;
@@ -23,6 +28,7 @@ public class Interactable : MonoBehaviour
 
     public Vector3 objectPos;
     [SerializeField] private PopupUI popupUI;
+    [SerializeField] private InteractionExample playerScript;
     [SerializeField] private InteractionPromptUI interactionPromptUI;
     [SerializeField] private MultiplePagesHandler multiplePagesHandler;
     [SerializeField] private MultiPageUI multiPageUI;
@@ -33,6 +39,7 @@ public class Interactable : MonoBehaviour
         objectPos = transform.position;
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
+        origEntertext = enterText;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -64,20 +71,40 @@ public class Interactable : MonoBehaviour
 
     public void Interact()
     {
-        if (isReadable == true)
+        if (isLocked)
+        {
+            enterText = "Locked";
+            if (playerScript.keyList.Contains(lockNr))
+            {
+                isLocked = false;
+                enterText = origEntertext;
+            }
+            else
+            {
+                audioSource.PlayOneShot(endInteractSound);
+                return;
+            }
+        }
+
+        if (isKey)
+        {
+            playerScript.keyList.Add(keyNr);
+        }
+
+        if (isReadable)
         {
             popupUI.SetUp(interactText, interactImage);
             interactionPromptUI.Close();
             Debug.Log(interactText);
             audioSource.PlayOneShot(interactSound);
         }
-        if (hasMultiplePages == true)
+        if (hasMultiplePages)
         {
+            interactionPromptUI.Close();
             multiplePagesHandler.Initiate();
             audioSource.PlayOneShot(interactSound);
-            interactionPromptUI.Close();
         }
-        if (isSceneTransport == true)
+        if (isSceneTransport)
         {
             SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
         }
