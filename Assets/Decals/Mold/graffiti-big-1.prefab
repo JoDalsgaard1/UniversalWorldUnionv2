@@ -26,7 +26,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 2100000, guid: 7a3c302918d12c74f93462b721a356ff, type: 2}
+      objectReference: {fileID: 2100000, guid: ab41455902d3d154fa9dabc6d7b53949, type: 2}
     - target: {fileID: 1219926515321912770, guid: 87be1d79d0b2d7e4e841b0769b5e3994,
         type: 3}
       propertyPath: m_Offset.x
